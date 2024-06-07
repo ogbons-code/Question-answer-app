@@ -42,7 +42,7 @@ function App() {
     <>
       <div className=" block mx-auto bg-white w-80 md:w-3/4 md:mx-auto mt-10 py-5 
               mb-0 rounded-xl shadow-lg shadow-gray-500/50 ...">
-        <h1 className="text-center text-xl md:text-3xl font-extrabold opacity-75 mb-4">Image Search App</h1>
+        <h1 className="text-center text-xl md:text-3xl font-extrabold opacity-75 mb-4">News Image Search App</h1>
         <div className>
           <input type="search" id="search-input" className="block border border-gray-300 px-16 mx-auto
           md:px-40 mt-5 py-2 ps-4 mb-3"
@@ -65,17 +65,17 @@ function App() {
                rounded-lg shadow-lg shadow-gray-500/50 ..." key={id}>
                 <img className="rounded-lg w-full h-60 shrink-0" src={image_url} />
                 <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight
+                   text-gray-900 dark:text-white text-center mt-3">
+                    {title}  </h5>
                   <h2 className="text-3xl text-black font-bold text-center">
-                    <span className="text-xl text-black"> News Site :
-                      <a href={url} className="text-3xl underline text-indigo-500 text-start">
+                    <span className="text-2xl text-black "> News Site :
+                      <a href={url} className="text-xl underline text-indigo-500 
+                      text-start ms-2 font-semibold">
                         {news_site} </a>
                     </span>
 
                   </h2>
-                  <h5 className="mb-2 text-lg font-semi-bold tracking-tight
-                   text-gray-900 dark:text-white text-center mt-3">A
-                    {title}  </h5>
-
                 </div>
               </div>
             )

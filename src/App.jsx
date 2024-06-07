@@ -69,8 +69,8 @@ function App() {
                    text-gray-900 dark:text-white text-center mt-3">
                     {title}  </h5>
                   <h2 className="text-3xl text-black font-bold text-center">
-                    <span className="text-2xl text-black "> News Site :
-                      <a href={url} className="text-xl underline text-indigo-500 
+                    <span className="text-2xl text-gray-700 "> News Site :
+                      <a href={url} className="text-xl underline text-indigo-600 
                       text-start ms-2 font-semibold">
                         {news_site} </a>
                     </span>
